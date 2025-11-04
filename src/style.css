@@ -85,7 +85,7 @@ html[data-theme="dark"] .theme-toggle-btn .fa-moon { display: none; }
     position: absolute;
     inset: 0;
     /* Esta será la imagen para el MODO OSCURO */
-    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../img/fondo-claro.png') no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../public/img/fondo-claro.png') no-repeat center center/cover;
     z-index: -2;
 }
 
@@ -95,7 +95,7 @@ html[data-theme="dark"] .theme-toggle-btn .fa-moon { display: none; }
     position: absolute;
     inset: 0;
     /* Fondo para MODO CLARO */
-    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../img/fondo-oscuro.png') no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../public/img/fondo-oscuro.png') no-repeat center center/cover;
     z-index: -1;
     /* Aquí está la magia: transicionamos la opacidad */
     opacity: 1;
