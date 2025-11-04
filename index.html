@@ -1,13 +1,845 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Peletería y Nevería Ramirez - Sabor y Tradición desde 1968</title>
+
+    <link rel="icon" type="image/x-icon" href="public/favicon_io/favicon.ico" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="public/favicon_io/site.webmanifest" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>amplify-landing</title>
+
+    <meta
+      name="description"
+      content="Descubre el sabor artesanal de nuestras paletas, nieves y aguas frescas, una tradición familiar hecha con amor en La Huerta, Jalisco."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="loading">
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div
+        class="preloader-logo"
+        role="img"
+        aria-label="Cargando Paletería y Nevería Ramirez"
+      >
+        <img
+          src="/public/img/logo.svg"
+          alt="Logo de Paletería y Nevería Ramirez"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" id="draggable-logo" class="nav-logo">
+          <img
+            src="public/favicon_io/android-chrome-192x192.png"
+            alt="Logo de Paletería y Nevería Ramirez"
+            class="logo-img"
+            style="height: 50px; vertical-align: middle; border-radius: 50%"
+          />
+          Peletería & Nevería Ramirez
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link" data-section="home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#nosotros" class="nav-link" data-section="nosotros"
+              >Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#historia" class="nav-link" data-section="historia"
+              >Historia</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link" data-section="menu">Sabores</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonios" class="nav-link" data-section="testimonios"
+              >Clientes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link" data-section="contacto"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Cambiar tema"
+          >
+            <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+          </button>
+          <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+          <span class="hero-subtitle">DESDE 1968</span>
+          <h1 class="main-headline">El Sabor que Une Generaciones</h1>
+          <p class="fade-in-up" style="--delay: 1s">
+            Helados y paletas artesanales hechos con fruta fresca y el corazón
+            de nuestra familia.
+          </p>
+          <a
+            href="#menu"
+            class="btn btn-primary fade-in-up"
+            style="--delay: 1.2s"
+            >Ver los Sabores</a
+          >
+        </div>
+      </section>
+
+      <div class="wave-divider reversed"></div>
+
+      <section id="nosotros" class="container">
+        <div class="mission-vision-values container fade-in">
+          <article class="info-card">
+            <h2><i class="fas fa-bullseye"></i> Misión</h2>
+            <p>
+              Deleitar a cada cliente con el sabor auténtico de Jalisco,
+              ofreciendo paletas, nieves y aguas frescas elaboradas
+              artesanalmente con ingredientes naturales y las recetas que han
+              pasado de generación en generación, convirtiendo cada visita en un
+              dulce momento para recordar.
+            </p>
+          </article>
+          <article class="info-card">
+            <h2><i class="fas fa-eye"></i> Visión</h2>
+            <p>
+              Consolidarnos como el corazón dulce de La Huerta y un referente de
+              la tradición heladera en Jalisco. Aspiramos a que el nombre
+              Ramirez sea sinónimo de calidad, familia y momentos felices,
+              asegurando que el legado de la abuela perdure para las futuras
+              generaciones.
+            </p>
+          </article>
+          <article class="info-card">
+            <h2><i class="fas fa-gem"></i> Valores</h2>
+            <ul>
+              <li>
+                <strong>Calidad Artesanal:</strong> Usamos solo los mejores
+                ingredientes frescos, garantizando un sabor inigualable.
+              </li>
+              <li>
+                <strong>Legado Familiar:</strong> Somos una familia compartiendo
+                el amor y la pasión de generaciones en cada producto.
+              </li>
+              <li>
+                <strong>Calidez y Servicio:</strong> Recibimos a todos con una
+                sonrisa, creando un ambiente donde se sientan como en casa.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <div class="wave-divider reversed"></div>
+
+      <section id="historia" class="container">
+        <div class="about-content">
+          <div class="about-image-container fade-in">
+            <img
+              src="/public/img/img1.png"
+              alt="Familia preparando helado artesanal"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text-container fade-in" style="--delay: 0.2s">
+            <span class="section-subtitle">NUESTRA HISTORIA</span>
+            <h2>Hecho con Amor, Saboreado en Familia</h2>
+            <p>
+              En el corazón de Jalisco, desde 1968, la familia Ramirez ha
+              compartido su pasión por los sabores auténticos. Cada paleta, cada
+              nieve, es un homenaje a las recetas de la abuela y a los
+              ingredientes frescos de nuestra tierra. Más que una nevería, somos
+              un punto de encuentro donde se crean dulces recuerdos.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="wave-divider reversed"></div>
+
+      <section id="menu">
+        <div class="container">
+          <span class="section-subtitle fade-in">CATÁLOGO ARTESANAL</span>
+          <h2 class="fade-in">Una Sinfonía de Sabores</h2>
+          <div class="menu-filters fade-in">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="aguas">
+              Aguas Frescas
+            </button>
+            <button class="filter-btn" data-filter="paletas-agua">
+              Paletas de Agua
+            </button>
+            <button class="filter-btn" data-filter="paletas-leche">
+              Paletas de Leche
+            </button>
+            <button class="filter-btn" data-filter="nieves">Nieves</button>
+            <button class="filter-btn" data-filter="especialidades">
+              Especialidades
+            </button>
+          </div>
+          <div class="product-grid">
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Limón con Chía"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img
+                src="img/art1.png"
+                alt="Agua de Limón con Chía"
+                loading="lazy"
+              />
+              <h3>Limón con Chía</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Frutas"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art2.png" alt="Agua de Frutas" loading="lazy" />
+              <h3>Frutas</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Fresa Natural"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img
+                src="img/art3.png"
+                alt="Agua de Fresa Natural"
+                loading="lazy"
+              />
+              <h3>Fresa Natural</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Granada"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art4.png" alt="Agua de Granada" loading="lazy" />
+              <h3>Maracuyá</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Kalua"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art5.png" alt="Agua de Kalua" loading="lazy" />
+              <h3>Kalua</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Lima"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art6.png" alt="Agua de Lima" loading="lazy" />
+              <h3>Lima</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Piña"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art7.png" alt="Agua de Piña" loading="lazy" />
+              <h3>Piña</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Arroz"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art8.png" alt="Agua de Arroz" loading="lazy" />
+              <h3>Arroz</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Coco"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art9.png" alt="Agua de Coco" loading="lazy" />
+              <h3>Coco</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Naranja"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art10.png" alt="Agua de Naranja" loading="lazy" />
+              <h3>Naranja</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="aguas"
+              data-title="Agua de Limon"
+              data-price="Ch $25 | M $30 | G $40"
+            >
+              <img src="img/art11.png" alt="Agua de Limon" loading="lazy" />
+              <h3>Limon</h3>
+              <span class="product-price">Ch $25 | M $30 | G $40</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Limón Natural"
+              data-price="$13"
+            >
+              <img
+                src="img/art12.png"
+                alt="Paleta de Limón Natural"
+                loading="lazy"
+              />
+              <h3>Limón</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Coco"
+              data-price="$13"
+            >
+              <img src="img/art13.png" alt="Paleta de Coco" loading="lazy" />
+              <h3>Coco</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Fresa"
+              data-price="$13"
+            >
+              <img src="img/art14.png" alt="Paleta de Fresa" loading="lazy" />
+              <h3>Fresa</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Chamoy"
+              data-price="$13"
+            >
+              <img src="img/art15.png" alt="Paleta de Chamoy" loading="lazy" />
+              <h3>Chamoy</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Arroz"
+              data-price="$13"
+            >
+              <img src="img/art16.png" alt="Paleta de Arroz" loading="lazy" />
+              <h3>Arroz</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Guayaba"
+              data-price="$13"
+            >
+              <img src="img/art17.png" alt="Paleta de Guayaba" loading="lazy" />
+              <h3>Guayaba</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Piña"
+              data-price="$13"
+            >
+              <img src="img/art18.png" alt="Paleta de Piña" loading="lazy" />
+              <h3>Piña</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-agua"
+              data-title="Paleta de Uva"
+              data-price="$13"
+            >
+              <img src="img/art19.png" alt="Paleta de Uva" loading="lazy" />
+              <h3>Uva</h3>
+              <span class="product-price">$13</span>
+            </article>
+
+            <!-- paletas de leche y otros productos -->
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Vainilla con Pasas"
+              data-price="$25"
+            >
+              <img
+                src="img/art20.png"
+                alt="Paleta de Vainilla con Pasas"
+                loading="lazy"
+              />
+              <h3>Vainilla con Pasas</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Vainilla con Jalea"
+              data-price="$25"
+            >
+              <img
+                src="img/art21.png"
+                alt="Paleta de Vainilla con Jalea"
+                loading="lazy"
+              />
+              <h3>Vainilla con Jalea</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Coco"
+              data-price="$25"
+            >
+              <img src="img/art22.png" alt="Paleta de Coco" loading="lazy" />
+              <h3>Coco</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Fresa"
+              data-price="$25"
+            >
+              <img src="img/art23.png" alt="Paleta de Fresa" loading="lazy" />
+              <h3>Fresa</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Nuez"
+              data-price="$25"
+            >
+              <img src="img/art24.png" alt="Paleta de Nuez" loading="lazy" />
+              <h3>Nuez</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Galleta"
+              data-price="$25"
+            >
+              <img src="img/art25.png" alt="Paleta de Galleta" loading="lazy" />
+              <h3>Galleta</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Gancito"
+              data-price="$25"
+            >
+              <img src="img/art26.png" alt="Paleta de Gancito" loading="lazy" />
+              <h3>Gancito</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="paletas-leche"
+              data-title="Paleta de Fresas con Crema"
+              data-price="$25"
+            >
+              <img
+                src="img/art27.png"
+                alt="Paleta de Fresas con Crema"
+                loading="lazy"
+              />
+              <h3>Fresas con Crema</h3>
+              <span class="product-price">$25</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Galleta"
+              data-price="$15 / cups"
+            >
+              <img src="img/art28.png" alt="Nieve de Galleta" loading="lazy" />
+              <h3>Galleta</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Vainilla"
+              data-price="$15 / cups"
+            >
+              <img src="img/art29.png" alt="Nieve de Vainilla" loading="lazy" />
+              <h3>Vainilla</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Chocolate"
+              data-price="$15 / cups"
+            >
+              <img
+                src="img/art30.png"
+                alt="Nieve de Chocolate"
+                loading="lazy"
+              />
+              <h3>Chocolate</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Fresa"
+              data-price="$15 / cups"
+            >
+              <img src="img/art31.png" alt="Nieve de Fresa" loading="lazy" />
+              <h3>Fresa</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Nuez"
+              data-price="$15 / cups"
+            >
+              <img src="img/art32.png" alt="Nieve de Nuez" loading="lazy" />
+              <h3>Nuez</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Café"
+              data-price="$15 / cups"
+            >
+              <img src="img/art33.png" alt="Nieve de Café" loading="lazy" />
+              <h3>Café</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Mermelada"
+              data-price="$15 / cups"
+            >
+              <img src="img/art34.png" alt="Nieve de Cajeta" loading="lazy" />
+              <h3>Cajeta</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="nieves"
+              data-title="Nieve de Chicle"
+              data-price="$15 / cups"
+            >
+              <img src="img/art35.png" alt="Nieve de Chicle" loading="lazy" />
+              <h3>Chicle</h3>
+              <span class="product-price">$15 / cups</span>
+            </article>
+
+            <article
+              class="product-card fade-in"
+              data-category="especialidades"
+              data-title="Esquimal Grande"
+              data-price="$35"
+            >
+              <img src="img/art36.png" alt="Esquimal Grande" loading="lazy" />
+              <h3>Esquimal Grande</h3>
+              <span class="product-price">$35</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="especialidades"
+              data-title="Fresas con Crema Preparada"
+              data-price="$35"
+            >
+              <img
+                src="img/art37.png"
+                alt="Fresas con Crema Preparada"
+                loading="lazy"
+              />
+              <h3>Fresas con Crema</h3>
+              <span class="product-price">$35</span>
+            </article>
+            <article
+              class="product-card fade-in"
+              data-category="especialidades"
+              data-title="Sandwich de Vainilla"
+              data-price="$25"
+            >
+              <img
+                src="img/art38.png"
+                alt="Sandwich de Vainilla"
+                loading="lazy"
+              />
+              <h3>Sandwich de Vainilla</h3>
+              <span class="product-price">$25</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="wave-divider reversed"></div>
+
+      <section id="testimonios" class="container">
+        <span class="section-subtitle fade-in">NUESTRA GENTE</span>
+        <h2 class="fade-in">Lo que dicen de nosotros</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <blockquote>
+              "La paleta de nuez es un viaje a mi infancia. No hay nada igual en
+              toda la región. ¡La calidad y el cariño se sienten en cada
+              mordida!"
+            </blockquote>
+            <div class="cite">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Cliente Sofia L."
+                loading="lazy"
+              /><span>Sofia L.</span>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in">
+            <blockquote>
+              "Se ha convertido en nuestra parada obligatoria del domingo. Los
+              niños aman la nieve de chicle y yo no perdono el agua de horchata.
+              ¡Son lo máximo!"
+            </blockquote>
+            <div class="cite">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Cliente Carlos M."
+                loading="lazy"
+              /><span>Carlos M. y Familia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="container">
+          <span class="section-subtitle fade-in">¿UN ANTOJO?</span>
+          <h2 class="fade-in">Ven a crear un dulce recuerdo</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+              <h3>Visítanos</h3>
+              <p>
+                Estamos en el corazón de La Huerta, listos para servirte una
+                sonrisa y tu sabor favorito.
+              </p>
+              <div class="contact-details">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> Hidalgo #28, Centro, La
+                  Huerta, Jalisco
+                </p>
+                <p><i class="fas fa-phone"></i> +52 315 108 3832</p>
+                <p>
+                  <i class="fas fa-clock"></i> Lunes a Domingo: 9:30 AM - 9:30
+                  PM
+                </p>
+              </div>
+              <div class="map-container">
+                <iframe
+                  src="https://maps.google.com/maps?q=Hidalgo%2028%2C%20La%20Huerta%20Jalisco%2048850&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <form
+              id="contactForm"
+              class="contact-form fade-in"
+              style="--delay: 0.2s"
+            >
+              <h3>O envíanos un mensaje</h3>
+              <div class="form-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Tu Nombre</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Tu Correo Electrónico</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <label for="message">Tu Mensaje</label>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#home" class="nav-logo footer-logo">Peletería Ramirez</a>
+        <p>El sabor que une generaciones en Jalisco desde 1968.</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/share/1B9QU5wt3J/?mibextid=wwXIfr"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/paleteria_neveria_rmz?igsh=MXV2ZmEzeXBoMzRpbg=="
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="footer-copy">
+          © 2025 Peletería y Nevería Ramirez. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div
+      id="product-modal"
+      class="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button
+          id="modal-close-btn"
+          class="modal-close-btn"
+          aria-label="Cerrar"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-image"></div>
+        <div class="modal-text">
+          <h3 id="modal-title"></h3>
+          <p id="modal-price" class="modal-price"></p>
+          <p id="modal-description">
+            Descripción detallada del producto próximamente.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
+  </div>
+    </footer>
+
+    <div id="product-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+      ...
+    </div>
+
+    <audio id="sparkle-sound" src="public/sounds/" preload="auto"></audio>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
+  <body class="loading">
+<img id="magic-cone-cursor" src="img/cono.png" alt="Cursor de cono de nieve" />
 </html>
